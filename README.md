@@ -4,11 +4,11 @@ This project shows how to use those .box files. Follow theses steps to get your 
 
 * Download the .box files. You'll need to pay S3 file transfer costs.
 
- ** <a href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-master.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-master.box</a>
+ <a href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-master.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-master.box</a>
 
- ** <a <href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-slave1.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-slave1.box</a>
+ <a <href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-slave1.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-slave1.box</a>
 
- ** <a href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-d4m.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-d4m.box</a>
+ <a href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-d4m.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-d4m.box</a>
 
 * Add the three boxes to Vagrant.
 
