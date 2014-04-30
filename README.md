@@ -109,6 +109,7 @@ instance_name = getenv('ACCUMULO_INSTANCE')
 username = getenv('ACCUMULO_USER')
 password = getenv('ACCUMULO_PASSWORD')
 DB = DBserver(hostname,'Accumulo', instance_name, username, password)
+disp("\nCustom initialization complete. Use 'DB' to access Accumulo!\n")
 ```
 
 Now each time that Octave is started, the Accumulo connection will be immediately ready for use.
