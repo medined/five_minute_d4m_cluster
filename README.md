@@ -30,7 +30,7 @@ vagrant up
 ./post_spinnup.sh
 ```
 
-5. Follow the instructions from the script to start Accumulo.
+* Follow the instructions from the script to start Accumulo.
 
 ```
 vagrant ssh master
