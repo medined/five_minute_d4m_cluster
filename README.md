@@ -86,3 +86,30 @@ Total is 2 elements using 136 bytes
 octave:10> ls(DB)
 ans = !METADATA trace
 ```
+
+## Making life easier
+
+First export some variables that hold information about your Accumulo instance. You might want to place these into your .bashrc file with adequate permissions.
+
+```
+export ACCUMULO_PASSWORD=secret
+export ACCUMULO_USER=root
+export ACCUMULO_INSTANCE=instance
+export ACCUMULO_HOST=affy-master
+```
+
+Now create a .octaverc file with the following:
+
+```
+addpath('/home/vagrant/accumulo_home/bin/d4m_api/matlab_src')
+Assoc('','','')
+DBinit
+hostname = getenv('ACCUMULO_HOST')
+instance_name = getenv('ACCUMULO_INSTANCE')
+username = getenv('ACCUMULO_USER')
+password = getenv('ACCUMULO_PASSWORD')
+DB = DBserver(hostname,'Accumulo', instance_name, username, password)
+```
+
+Now each time that Octave is started, the Accumulo connection will be immediately ready for use.
+
