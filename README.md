@@ -33,6 +33,6 @@ vagrant up
 * Follow the instructions from the script to start Accumulo.
 
 ```
-vagrant ssh master
+vagrant ssh slave2
 accumulo_home/bin/accumulo/bin/start-all.sh
 ```
