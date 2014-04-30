@@ -36,3 +36,53 @@ vagrant up
 vagrant ssh slave2
 accumulo_home/bin/accumulo/bin/start-all.sh
 ```
+
+* Now you are free to use D4M:
+
+```
+vagrant@affy-slave2:~$ octave
+GNU Octave, version 3.8.1
+Copyright (C) 2014 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type 'warranty'.
+
+Octave was configured for "x86_64-unknown-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/get-involved.html
+
+Read http://www.octave.org/bugs.html to learn how to submit bug reports.
+For information about changes from previous versions, type 'news'.
+
+octave:1> addpath('/home/vagrant/accumulo_home/bin/d4m_api/matlab_src')
+octave:2> Assoc('','','');
+octave:3> DBinit;
+octave:4> hostname='affy-master';
+octave:5> cb_type = 'Accumulo';
+octave:6> instance_name='instance';
+octave:7> username = 'root';
+octave:8> password = 'secret';
+octave:9> DB = DBserver(hostname,cb_type,instance_name, username, password)
+Database Object
+
+  scalar structure containing the fields:
+
+    host = affy-master
+    type = Accumulo
+    instanceName = instance
+    user = root
+Tables in database:
+Variables in the current scope:
+
+   Attr Name          Size                     Bytes  Class
+   ==== ====          ====                     =====  =====
+        METADATA      1x1                         70  DBtable
+        trace         1x1                         66  DBtable
+
+Total is 2 elements using 136 bytes
+octave:10> ls(DB)
+ans = !METADATA trace
+```
