@@ -10,3 +10,29 @@ This project shows how to use those .box files. Follow theses steps to get your 
 
  c. <a href='https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-d4m.box'>https://s3.amazonaws.com/accumulo.1.5.0.by.vagrant/affy-d4m.box</a>
 
+2. Add the three boxes to Vagrant.
+
+```
+vagrant box add -f affy-master affy-master.box
+vagrant box add -f affy-slave1 affy-slave1.box
+vagrant box add -f affy-slave2 affy-slave2.box
+```
+
+3. Spin-up the instances.
+
+```
+vagrant up
+```
+
+4. Run the post-spin script.
+
+```
+./post_spinnup.sh
+```
+
+5. Follow the instructions from the script to start Accumulo.
+
+```
+vagrant ssh master
+accumulo_home/bin/accumulo/bin/start-all.sh
+```
