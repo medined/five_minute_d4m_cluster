@@ -1,4 +1,12 @@
+# Introduction
+
 This project is a followup to the https://github.com/medined/Accumulo_1_5_0_By_Vagrant. That project used Vagrant to launch three virtual machines, then loads and configures the needed software. It takes about 30 minutes to provision the three virtual machines. Once the virtual machines were provisioned, I created .box files specific to VirtualBox to 'freeze' them.
+
+# What is D4M?
+
+See the <a target='_blank' href='D4M Home Page'>https://github.com/medined/D4M_Schema'</> for information about D4M.
+
+# Spinup Local Cluster
 
 This project shows how to use those .box files. Follow theses steps to get your own cluster working:
 
