@@ -45,7 +45,7 @@ vagrant ssh slave2
 accumulo_home/bin/accumulo/bin/start-all.sh
 ```
 
-* Now you are free to use D4M:
+# Use the Cluster
 
 ```
 vagrant@affy-slave2:~$ octave
@@ -95,7 +95,7 @@ octave:10> ls(DB)
 ans = !METADATA trace
 ```
 
-## Making life easier
+## Making Life Easier
 
 First export some variables that hold information about your Accumulo instance. You might want to place these into your .bashrc file with adequate permissions.
 
