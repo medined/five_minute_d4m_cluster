@@ -109,15 +109,15 @@ export ACCUMULO_HOST=affy-master
 Now create a .octaverc file with the following:
 
 ```
-addpath('/home/vagrant/accumulo_home/bin/d4m_api/matlab_src')
-Assoc('','','')
-DBinit
-hostname = getenv('ACCUMULO_HOST')
-instance_name = getenv('ACCUMULO_INSTANCE')
-username = getenv('ACCUMULO_USER')
-password = getenv('ACCUMULO_PASSWORD')
-DB = DBserver(hostname,'Accumulo', instance_name, username, password)
-disp("\nCustom initialization complete. Use 'DB' to access Accumulo!\n")
+addpath('/home/vagrant/accumulo_home/bin/d4m_api/matlab_src');
+Assoc('','','');
+DBinit;
+hostname = getenv('ACCUMULO_HOST');
+instance_name = getenv('ACCUMULO_INSTANCE');
+username = getenv('ACCUMULO_USER');
+password = getenv('ACCUMULO_PASSWORD');
+DB = DBserver(hostname,'Accumulo', instance_name, username, password);
+disp("\nCustom initialization complete. Use 'DB' to access Accumulo!\n");
 ```
 
 Now each time that Octave is started, the Accumulo connection will be immediately ready for use.
