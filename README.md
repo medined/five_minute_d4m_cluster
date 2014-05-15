@@ -4,7 +4,7 @@ This project is a followup to the https://github.com/medined/Accumulo_1_5_0_By_V
 
 # What is D4M?
 
-See the <a target='_blank' href='D4M Home Page'>https://github.com/medined/D4M_Schema'</> for information about D4M.
+See the <a target='_blank' href='D4M Home Page'>https://github.com/medined/D4M_Schema</a> for information about D4M.
 
 # Spinup Local Cluster
 
